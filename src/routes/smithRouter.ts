@@ -8,6 +8,7 @@ const smithRouter = Router();
 smithRouter.post('/products', productsController.createProduct);
 smithRouter.get('/products', productsController.getProducts);
 smithRouter.post('/users', userController.createUser);
+smithRouter.post('/login', userController.login);
 smithRouter.get('/orders', ordersController.getOrders);
 
 export default smithRouter;

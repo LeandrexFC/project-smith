@@ -1,9 +1,9 @@
 import jwt from 'jsonwebtoken';
-import User from '../types/user.type';
+// import User from '../types/user.type';
 
 const secretKey = process.env.JWT_SECRET || 'coxinha';
 
-async function generateToken(payload:User) {
+async function generateToken(payload:object) {
   const token = jwt.sign(payload, secretKey, {
     expiresIn: '15m',
     algorithm: 'HS256',

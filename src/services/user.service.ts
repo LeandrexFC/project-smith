@@ -12,6 +12,25 @@ async function createUser(user: User) {
   return { token: result };
 }
 
+async function validateLogin(username: string, password: string) {
+  if (!username) {
+    return { type: 'REQUIRED_FIELD', message: '"username" is required' };
+  } if (!password) {
+    return { type: 'REQUIRED_FIELD', message: '"password" is required' };
+  }
+  
+  const isValid = await userModel.verifyLogin(username, password);
+
+  if (!isValid) {
+    return { type: 'INVALID_USER', message: 'Username or password invalid' };
+  } if (isValid.password !== password) {
+    return { type: 'INVALID_USER', message: 'Username or password invalid' };
+  } 
+  const token = await generateToken.generateToken(isValid);
+  return { type: null, message: '', token };
+}
+
 export default {
   createUser,
+  validateLogin,
 };

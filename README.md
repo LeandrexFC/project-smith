@@ -1,13 +1,14 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<h2>Smith Project</h1>
+The Smith Project is a medieval item store API developed using TypeScript. The project involves building all application layers to enable basic database operations. Endpoints are implemented to read from and write to a MySQL database, providing functionality for managing the items in the store.<br>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+<h2>Project Overview</h2>
+The main objectives of the Smith Project are as follows:<br>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Create a medieval item store API.<br>
+- Develop all application layers for basic database operations.<br>
+- Implement endpoints for reading from and writing to a MySQL database.<br>
+- Provide functionality for managing items in the store.<br>
+
+<h3>Contributors</h3> 
+I Created the src folder and all its contents.<br> 
+Trybe - Provided the remaining files and resources for the project.
